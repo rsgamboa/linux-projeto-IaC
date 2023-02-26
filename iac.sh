@@ -21,7 +21,7 @@ useradd rodrigo -m -s /bin/bash -G GRP_TI,GRP_ADM,GRP_FIN,GRP_PDV
 
 useradd lucas -m -s /bin/bash -G GRP_PDV
 useradd pricila -m -s /bin/bash -G GRP_FIN
-useradd gabriela -m -s /bin/bash -G GRP_FIN, GRP_ADM, GRP_PDV
+useradd gabriela -m -s /bin/bash -G GRP_FIN,GRP_ADM,GRP_PDV
 
 echo "Especificando permissões dos diretórios...."
 
