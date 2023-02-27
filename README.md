@@ -1,8 +1,16 @@
 
-# Projeto IaC Linux
+# Bootcamp DIO - Linux do Zero
 
 Arquivos de Bash Script para IaC criados no curso de Linux da DIO.me
 
+##
+
+
+## Mentoria
+- [@denilsonbonatti](https://github.com/denilsonbonatti)
+
+##
+# Projeto 1 - IaC Linux
 
 
 ## Especificando permissões dos diretórios....
@@ -32,7 +40,29 @@ Arquivos de Bash Script para IaC criados no curso de Linux da DIO.me
 | GRP_ADM      | suporte, rodrigo, gabriela |
 | GRP_FIN      | pricila |
 
+##
+# Projeto 2 - IaC Linux
 
+
+## Atualizando o servidor e instalando apache2 e unzip...
+
+```bash
+apt-get update
+apt-get upgrade -y
+apt-get install apache2 -y
+apt-get install unzip -y
+```
+
+
+## Baixando e copiando os arquivos da aplicação...
+
+```bash
+cd /tmp
+wget https://github.com/rsgamboa/MangaFlix/archive/refs/heads/main.zip
+unzip main.zip
+mv linux-site-dio-main/* /var/www/html/
+rm -rf linux-site-dio-main/
+```
 ## Referências
 
  - [Ubuntu Forum](https://ubuntuforum-br.org/)
